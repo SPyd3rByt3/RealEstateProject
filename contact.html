@@ -32,7 +32,6 @@
         <p>Fill In Next Information</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur dolorem eaque, dicta placeat cupiditate suscipit repellat animi quam laboriosam perspiciatis!</p>
         <div class="form-container">
-            
             <fieldset>
                 <legend>Personal Information</legend>
                 <div class="form-control">
@@ -46,11 +45,78 @@
                 <div class="form-control">
                     <label>Phone Number:</label>
                     <input type="tel">
+                </div>
                 <div class="form-control">
                     <label>Message:</label>
                     <textarea></textarea>>
                 </div>
             </fieldset>
+        </div>
+
+
+
+        <div class="form-container">
+            <fieldset>
+                <legend>Product Information</legend>
+                <div class="form-control">
+                    <label for="pet-select">Type:</label>
+
+                    <select name="pets" id="pet-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                    
+                </div>
+                <div class="form-control">
+                    <label>Number:</label>
+                    <input type="number">
+                </div>
+            </fieldset>
+        </div>
+
+
+        <div class="form-container">
+            <form>
+            <fieldset>
+                <legend>Best Form of Contact</legend>
+                <div class="form-control">
+                    <input type="radio" id="number" name="contact"
+                    value="n" />
+                    <label for="number">number</label><br />
+                </div>
+
+                <div class="form-control">
+                    <input type="radio" id="email" name="contact" value="e" />
+                    <label for="email">email</label><br />
+                </div>
+
+                <div class="monster-radio">
+                <legend>Choose your favorite monster, as well</legend>
+                </div>
+                    <input type="radio" id="kraken" name="monster" value="K" />
+                    <label for="kraken">Kraken</label><br />
+
+                    <input type="radio" id="sasquatch" name="monster" value="S" />
+                    <label for="sasquatch">Sasquatch</label><br />
+
+                    <input type="radio" id="mothman" name="monster" value="M" />
+                    <label for="mothman">Mothman</label>
+
+                <div class="Date-Hour">
+                    <label for="start">Date:</label>
+                    <input type="date" id="start" name="trip-start" value="2024-09-26" min="2017-01-01" max="2025-12-31" />
+                </div>
+                <div class="Date-Hour">
+                    <label>Hour:</label>
+                    <input type="Hour">
+                </div>
+            </fieldset>
+            </form>
         </div>
     </div>
 </main>
