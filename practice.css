@@ -1,0 +1,49 @@
+table{
+    background-color: gray;
+}
+table,th,td{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 20px;
+}
+.error{
+    background-color: red;
+    color: rgb(245, 134, 134);
+}
+
+
+/*border-bottom*/
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media(max-width:768px){
+    .menu{
+    background-color: red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.tags, th, td, img{
+    aspect-ratio: 19/6;
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax());
+
+}
+
+.product {
+    --_padding: 1 rem;
+    grid-row: span 3;
+    display: grid;
+}

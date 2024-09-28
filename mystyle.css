@@ -30,6 +30,11 @@ img{
     margin-right: auto;
     margin:0 auto;
 }
+@media(max-width:786px){
+    .container{
+        width: 95%;
+    }
+}
 .btn{
     display: block;
     background-color:  orangered;
@@ -62,7 +67,25 @@ img{
     margin-right: 30px;
 }
 
-
+@media(max-width:768px){
+    .menu{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+.bar-menu{
+    flex-direction: column;
+    height: 200px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+.menu a{
+    margin-bottom: 20px;
+    text-align: center;
+}
 /*about*/
 .container{
 display: flexbox;
@@ -75,7 +98,24 @@ display: flexbox;
 .about-item{
     margin-right: 30px;
 }
-
+@media(max-width:768px){
+    .about-container{
+        flex-direction: column;
+    }
+    .about-item{
+        margin-right: 0;
+    }
+    .about-item h3{
+        text-align: center;
+    }
+    .about-item img{
+        display: block;
+        margin: 20px auto;
+    }
+    h2{
+        text-align: center;
+    }
+}
 /*houses*/
 .houses-container{
     display: flex;
@@ -100,7 +140,29 @@ display: flexbox;
 .house-item-text{
     padding: 20px;
 }
-price{
+@media(max-width:768px){
+    .houses-container{
+        flex-direction: column;
+    }
+    .house-item{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .an-item-img{
+        text-align: center;
+    }
+    .house-item-text{
+        display: block;
+        margin: 20px auto;
+    }
+    h3{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+.price{
     color: green;
     font-weight: bolder
 }
@@ -115,19 +177,19 @@ price{
         justify-content: space-between;
 }
 
+
 /*contact*/
 
 .contact-header{
     background-color: orange;
     color: black;
-    height: 150px;
+    min-height: 300px;
 }
-
 .contact-header a{
     color: black;
 }
 .form-container{
-    background-color: aqua;
+    background-color: rgb(95, 233, 31);
 
 }
 .form-control{
@@ -138,7 +200,7 @@ justify-content: space-around;
 
 /*form container*/
 .form-container{
-background-color: rgb(234, 160, 11);
+background-color: orangered;
 padding: 20px;
 border-radius: 15px;
 }
@@ -165,6 +227,10 @@ border-radius: 15px;
 .form-control label{
     display: inline-block;
     width: 150px;
+}
+.Date-Hour-Container{
+    display: inline-flexbox;
+
 }
 
 .footer-container{
