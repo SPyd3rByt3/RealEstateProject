@@ -30,6 +30,12 @@ td,th{
     }
 }
 
+
+
+
+
+/*Learning Curve TESTS*/
+
 .tags, th, td, img{
     aspect-ratio: 19/6;
     object-fit: cover;

@@ -245,7 +245,7 @@ border-radius: 15px;
 
 /*icons*/
 .icons-list{
-
+    padding: 0;
 }
 .icon-container{
     display: flex;
@@ -330,4 +330,3 @@ font-weight: 900;
     font-weight: 900;
     font-style: italic;
   }
-  
